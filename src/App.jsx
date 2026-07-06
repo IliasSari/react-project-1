@@ -3,6 +3,7 @@ import Footer from './Footer.jsx'
 import Games from './Games.jsx';
 import Card from './Card.jsx';
 import Button from './Button.jsx';
+import Students from './Students.jsx';
 
 function App(){
   return(
@@ -12,6 +13,7 @@ function App(){
       <Footer/>
       <Card/>
       <Button/>
+      <Students name="George" age="27" isStudents={true}/>
     </>
   );
 }
