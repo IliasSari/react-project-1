@@ -14,6 +14,8 @@ function App(){
       <Card/>
       <Button/>
       <Students name="George" age="27" isStudents={true}/>
+      <Students name="John" age="34" isStudents={false}/>
+      <Students name="Bill" age="28" isStudents={true}/>
     </>
   );
 }

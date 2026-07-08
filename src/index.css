@@ -26,3 +26,14 @@
   font-family: Arial, sans-serif;
   color: hsl(0, 0%, 30%);
 }
+
+.Students{
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 0%, 0.8);
+}
+
+.Students p{
+  margin: 0%;
+}
