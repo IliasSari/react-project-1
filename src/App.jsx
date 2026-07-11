@@ -9,12 +9,20 @@ import List from './List.jsx';
 
 function App(){
         const fruits = [{id: 1, name: "apple", calories: 95},
-                  {id: 2, name: "banana", calories: 105},
-                  {id: 3, name: "orange", calories: 45},
-                  {id: 4, name: "coconut", calories: 159},
-                  {id: 5, name: "pinaple", calories: 37}
+                        {id: 2, name: "banana", calories: 105},
+                        {id: 3, name: "orange", calories: 45},
+                        {id: 4, name: "coconut", calories: 159},
+                        {id: 5, name: "pinaple", calories: 37}
               ];
-  return(
+
+        const vegetables = [{id: 6, name: "potatoes", calories: 95},
+                            {id: 7, name: "celery", calories: 105},
+                            {id: 8, name: "carrots", calories: 45},
+                            {id: 9, name: "corn", calories: 159},
+                            {id: 10, name: "broccoli", calories: 37}
+              ];
+        
+        return(
     <>
 
       <Header/>   
@@ -26,7 +34,9 @@ function App(){
       <Students name="John" age="34" isStudents={false}/>
       <Students name="Bill" age="28" isStudents={true}/>
       <UserGreeting isLoggedIn={true} username="Ilias"/> 
-      <List items={fruits} category={fruits}/>
+      {fruits.length > 0 && <List items={fruits} category="Fruits"/> }
+      {vegetables.length > 0 && <List items={vegetables} category="Vegetables"/> }
+
     </>
   );
 }
