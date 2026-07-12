@@ -6,6 +6,7 @@ import Button from './Button.jsx';
 import Students from './Students.jsx';
 import UserGreeting from './UserGreeting.jsx';
 import List from './List.jsx';
+import Button2 from './Button2.jsx';
 
 function App(){
         const fruits = [{id: 1, name: "apple", calories: 95},
@@ -30,6 +31,7 @@ function App(){
       <Footer/>
       <Card/>
       <Button/>
+      <Button2/>
       <Students name="George" age="27" isStudents={true}/>
       <Students name="John" age="34" isStudents={false}/>
       <Students name="Bill" age="28" isStudents={true}/>
