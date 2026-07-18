@@ -111,3 +111,18 @@
 .counter-button:hover{
   background-color: rgb(11, 99, 70);
 }
+
+input[type="radio"]{
+  margin-right: 5px;
+  height: 13px;
+  width: 15px;
+}
+
+input[type="text"], input[type="number"], textarea, select {
+    display: block;
+    margin-bottom: 10px;
+    padding: 7px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: rgb(245, 250, 255);
+}
