@@ -1,33 +1,33 @@
-import {useState} from 'react';
+import {use, useState} from 'react';
 
 
 function MyComponent(){
 
-    const [name, setName] = useState("Guest");
-    const [age, setAge] = useState(0);
-    const [isEmployed, setIsEmployed] = useState(false);
+   const [name,setName] = useState("Guest");
+   const [quantity, setQuantity] = useState(1);
+   const [comment, setComment] = useState("");
+   
+   function handleNameChange(event){
+    setName(event.target.value);
+   }
 
-    const updateName = () => {
-        setName ("George");
-    }
+   function handleQuantityChange(event){
+    setQuantity(event.target.value);
+   }
 
-    const incementAge = () => {
-        setAge(age + 1);
-    }
+   function handleCommentChange(event){
+    setComment(event.target.value);
+   }
+   return(<div>
+        <input value={name} onChange={handleNameChange}/>
+        <p>Name: {name}</p>
 
-    const toggleEmployedStatus = () => {
-        setIsEmployed(!isEmployed);
-    }
-    return(<div>
-                <p>Name: {name}</p>
-                <button onClick={updateName}>Set Name</button>
+        <input value={quantity} onChange={handleQuantityChange} type='number'/>
+        <p>Quantity: {quantity}</p>
 
-                <p>Age: {age}</p>
-                <button onClick={incementAge}>Incement Age</button>
-
-                <p>isEmployed: {isEmployed ? "Yes" : "No"}</p>
-                <button onClick={toggleEmployedStatus}>Incement Age</button>
-    </div>);
+        <textarea value={comment} onChange={handleCommentChange} placeholder='Enter comments'/>
+        <p>Comment: {comment}</p>
+   </div>)
     
 }
 
