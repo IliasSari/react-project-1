@@ -7,13 +7,13 @@ function Car(){
                                     model: "Octavia"});
     
     function handleYearChange(event){
-        setCar({year: event.target.value});
+        setCar(c =>({...c, year: event.target.value}));
     }
     function handleMakeChange(event){
-
+        setCar(c => ({...c, make: event.target.value}));
     }
     function handleModelChange(event){
-
+        setCar(c => ({...c, model: event.target.value}));
     }
 
     return(<div>
