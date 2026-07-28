@@ -4,7 +4,7 @@ function Button(){
     
     const styles = {
 
-        backgroundColor: "rgb(39, 69, 89)",
+        backgroundColor: "rgb(40, 119, 171)",
         color: "white",
         padding: "10px 20px",
         borderRadius: "4px",
