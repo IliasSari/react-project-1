@@ -10,7 +10,7 @@ import Button2 from './Button2.jsx';
 import MyComponent from './MyComponent.jsx';
 import Counter from './Counter.jsx';
 import ColorPicker from './ColorPicker.jsx';
-import Car from './Car.jsx';
+import Foods from './Foods.jsx';
 
 function App(){
         const fruits = [{id: 1, name: "apple", calories: 95},
@@ -45,7 +45,7 @@ function App(){
       <MyComponent/>
       <Counter/>
       <ColorPicker/>
-      <Car/>
+      <Foods/>
     </>
   );
 }
