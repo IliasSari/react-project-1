@@ -11,7 +11,7 @@ import MyComponent from './MyComponent.jsx';
 import Counter from './Counter.jsx';
 import ColorPicker from './ColorPicker.jsx';
 import Foods from './Foods.jsx';
-
+import Cars from './Cars.jsx';
 function App(){
         const fruits = [{id: 1, name: "apple", calories: 95},
                         {id: 2, name: "banana", calories: 105},
@@ -46,6 +46,7 @@ function App(){
       <Counter/>
       <ColorPicker/>
       <Foods/>
+      <Cars/>
     </>
   );
 }
