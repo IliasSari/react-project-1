@@ -18,8 +18,8 @@ function Cars() {
         setCarModel("");
     }
 
-    function handleRemoveChange(index){
-
+    function handleRemoveCar(index){
+        setCars(c => c.filter((element, i)=>i !== index));
     }
 
     function handleYearChange(event){
@@ -38,8 +38,8 @@ function Cars() {
                 <h2>List of car objects</h2>
                 <ul>
                     {cars.map((car, index) =>
-                    <li key={index}>
-                        {car.year}{car.make}{car.model}
+                    <li key={index} onClick={() => handleRemoveCar(index)}>
+                        {car.year} {car.make} {car.model}
                     </li>)}
                 </ul>
                 <input type="number" value={carYear} onChange={handleYearChange}/><br/>
