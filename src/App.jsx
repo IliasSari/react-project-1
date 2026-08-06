@@ -13,6 +13,7 @@ import ColorPicker from './ColorPicker.jsx';
 import Foods from './Foods.jsx';
 import Cars from './Cars.jsx';
 import ToDoList from './ToDoList.jsx';
+import UseEffect from './UseEffect.jsx';
 
 function App(){
         const fruits = [{id: 1, name: "apple", calories: 95},
@@ -50,6 +51,7 @@ function App(){
       <Foods/>
       <Cars/>
       <ToDoList/>
+      <UseEffect/>
     </>
   );
 }
