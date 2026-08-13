@@ -7,12 +7,12 @@
   --text-main: hsl(0, 0%, 20%);
   --text-muted: hsl(0, 0%, 40%);
   
-  --primary-color: #2563eb;
+  --primary-color: #2d68e7;
   --success-color: #22c55e;
   --danger-color: #ef4444;
   --info-color: #0ea5e9;
   
-  --radius-sm: 5px;
+  --radius-sm: 20px;
   --radius-md: 10px;
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
@@ -27,8 +27,8 @@ body {
   font-family: var(--font-primary);
   background-color: var(--bg-color);
   color: var(--text-main);
-  margin: 0;
-  padding: 20px;
+  margin: 10;
+  padding: 25px;
 }
 
 h1 {
@@ -93,7 +93,7 @@ button:hover {
 
 .card {
   background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #152e4f;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: 20px;
@@ -107,25 +107,25 @@ button:hover {
 
 .card:hover {
   box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 .card .card-image {
   max-width: 70%;
   height: auto;
   border-radius: 50%;
-  margin: 0 auto 12px auto;
+  margin: 0 auto 10px auto;
   display: block;
 }
 
 .card .card-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 0 0 8px 0;
   color: var(--text-main);
 }
 
 .card .card-text {
-  font-size: 0.95rem;
+  font-size: 1.01rem;
   color: var(--text-muted);
   margin: 0;
 }
@@ -305,4 +305,18 @@ ol li {
   padding: 6px 12px;
   font-size: 0.9rem;
   margin-left: 6px;
+}
+
+.clock-container{
+  backdrop-filter: blur(5px);
+  padding: 10px 0;
+}
+
+.clock{
+  color: #0e79d1;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
 }
