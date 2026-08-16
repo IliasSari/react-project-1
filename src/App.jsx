@@ -15,6 +15,7 @@ import Cars from './Cars.jsx';
 import ToDoList from './ToDoList.jsx';
 import UseEffect from './UseEffect.jsx';
 import DigitalClock from './DigitalClock.jsx';
+import ComponentA from './ComponentA.jsx';
 
 
 function App(){
@@ -55,6 +56,7 @@ function App(){
       <ToDoList/>
       <UseEffect/>
       <DigitalClock/>
+      <ComponentA/>
     </>
   );
 }
